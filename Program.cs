@@ -8,23 +8,23 @@ namespace Methods
 {
     class Program
     {
-        //////static int [] SortingArray(int [] A)
-        //////{
-        //////        int swap;
-        //////            for (int i = 0; i< 6; i++)
-        //////            {
-        //////                for (int j = 0; j< 6 - i - 1; j++)
-        //////                {
-        //////                    if (A[j] > A[j + 1])
-        //////                    {
-        //////                        swap = A[j];
-        //////                        A[j] = A[j + 1];
-        //////                        A[j + 1] = swap;
-        //////                    }
-        //////}
-        //////            }
-        //////            return A;
-        //////}
+        static int[] SortingArray(int[] A)
+        {
+            int swap;
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < 6 - i - 1; j++)
+                {
+                    if (A[j] > A[j + 1])
+                    {
+                        swap = A[j];
+                        A[j] = A[j + 1];
+                        A[j + 1] = swap;
+                    }
+                }
+            }
+            return A;
+        }
 
 
         static int[] ArraySorting(int[] Array)
